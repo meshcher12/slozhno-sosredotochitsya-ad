@@ -185,3 +185,12 @@
   inline-size: 100%;
   block-size: auto;
 }
+
+.footer {
+  display: grid;
+  place-items: center;
+  block-size: 100vh;
+  min-block-size: var(--screen-min-height);
+  padding: var(--page-inset);
+  text-shadow: 2px 2px 0 var(--shadow-color);
+}
