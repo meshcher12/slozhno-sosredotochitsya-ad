@@ -125,3 +125,48 @@
   font-size: inherit;
   background-color: var(--accent-color);
 }
+
+.content {
+  display: grid;
+  gap: 50px;
+  padding: 40px var(--page-inset);
+}
+
+.section,
+.section__articles {
+  display: grid;
+  align-content: start;
+  gap: var(--section-gap);
+}
+
+.section__title {
+  color: var(--heading-color);
+  font-size: inherit;
+}
+
+.article {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.article__subheading {
+  font-weight: 400;
+}
+
+.article__link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--shadow-color);
+}
+
+.article__link:hover {
+  border-block-end: 1px solid currentColor;
+}
+
+.article__link:focus {
+  outline: none;
+}
+
+.article__link:focus-visible {
+  outline: 1px solid currentColor;
+}
