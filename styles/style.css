@@ -81,6 +81,8 @@
 
 .header__theme-menu-button {
   display: block;
+  min-inline-size: 70px;
+  min-block-size: 26px;
   padding: 0 12px 2px;
   border: 1px solid transparent;
   color: var(--control-color);
@@ -114,7 +116,7 @@
 }
 
 .header__title {
-  text-shadow: 4px 4px 0 var(--display-shadow-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .header__intro {
@@ -157,7 +159,7 @@
 
 .article__link {
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--shadow-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .article__link:hover {
@@ -193,7 +195,7 @@
   block-size: 100vh;
   min-block-size: var(--screen-min-height);
   padding: var(--page-inset);
-  text-shadow: 2px 2px 0 var(--shadow-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 @media (width >= 768px) {

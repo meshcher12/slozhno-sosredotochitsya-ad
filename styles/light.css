@@ -9,7 +9,6 @@
   --highlight-text-color: #353430;
   --control-color: #353430;
   --hover-color: rgb(53 52 48 / 40%);
-  --display-shadow-color: #ff0070;
   --record-display: none;
 }
 
@@ -25,7 +24,6 @@
     --highlight-text-color: #353430;
     --control-color: #353430;
     --hover-color: rgb(53 52 48 / 40%);
-    --display-shadow-color: #ff0070;
     --record-display: none;
   }
 }

@@ -15,8 +15,6 @@
   --highlight-text-color: #000028;
   --control-color: #ff0070;
   --hover-color: rgb(255 0 112 / 40%);
-  --shadow-color: var(--accent-color);
-  --display-shadow-color: var(--accent-color);
   --record-display: flex;
 }
 
