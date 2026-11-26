@@ -194,3 +194,68 @@
   padding: var(--page-inset);
   text-shadow: 2px 2px 0 var(--shadow-color);
 }
+
+@media (width >= 768px) {
+  .header__title {
+    margin-inline-start: calc(-1 * var(--page-inset));
+  }
+
+  .header__intro {
+    justify-self: end;
+    inline-size: 50%;
+  }
+
+  .content {
+    gap: 80px;
+    padding-block: 60px;
+  }
+
+  .section_with_sidebar {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
+
+  .section_distractions .section__title {
+    max-inline-size: calc((100% - var(--section-gap)) / 3);
+  }
+
+  .gallery,
+  .gallery__images {
+    gap: var(--section-gap);
+  }
+
+  .gallery__images {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-areas:
+      'sunset sunset ice-cream'
+      'tape books ice-cream'
+      'tape street street';
+  }
+
+  .gallery__image_sunset {
+    grid-area: sunset;
+  }
+
+  .gallery__image_ice-cream {
+    grid-area: ice-cream;
+  }
+
+  .gallery__image_tape {
+    grid-area: tape;
+  }
+
+  .gallery__image_books {
+    grid-area: books;
+  }
+
+  .gallery__image_street {
+    grid-area: street;
+  }
+
+  .gallery__image_ice-cream,
+  .gallery__image_tape {
+    block-size: 100%;
+    min-block-size: 0;
+    object-fit: cover;
+    object-position: center;
+  }
+}

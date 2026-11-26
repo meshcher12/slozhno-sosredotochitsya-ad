@@ -19,3 +19,10 @@
   --display-shadow-color: var(--accent-color);
   --record-display: flex;
 }
+
+@media (width >= 768px) {
+  :root {
+    --page-inset: 20px;
+    --display-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
