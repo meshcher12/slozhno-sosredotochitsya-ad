@@ -10,3 +10,32 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  align-items: center;
+  block-size: 100vh;
+  min-block-size: var(--screen-min-height);
+  padding: var(--page-inset);
+}
+
+.display-title {
+  color: var(--display-color);
+  font-size: var(--display-size);
+  line-height: 0.825;
+}
+
+.header__title {
+  text-shadow: 4px 4px 0 var(--display-shadow-color);
+}
+
+.header__intro {
+  font-weight: 700;
+}
+
+.title-decor {
+  color: var(--highlight-text-color);
+  font-size: inherit;
+  background-color: var(--accent-color);
+}
