@@ -259,3 +259,27 @@
     object-position: center;
   }
 }
+
+@media (width >= 1024px) {
+  .header__theme-menu {
+    align-self: start;
+    justify-self: center;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .section_with_sidebar,
+  .section_distractions .section__articles {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .section_with_sidebar .section__articles {
+    grid-column: span 2;
+  }
+
+  .section_distractions .section__title {
+    max-inline-size: calc((100% - 2 * var(--section-gap)) / 3);
+  }
+}
