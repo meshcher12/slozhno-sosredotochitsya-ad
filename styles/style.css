@@ -170,3 +170,18 @@
 .article__link:focus-visible {
   outline: 1px solid currentColor;
 }
+
+.gallery,
+.gallery__images {
+  gap: 10px;
+}
+
+.gallery__images {
+  display: grid;
+}
+
+.gallery__image {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+}
