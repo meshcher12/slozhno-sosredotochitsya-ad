@@ -22,6 +22,7 @@
 
 .decorated-zone {
   position: relative;
+  container-type: inline-size;
 }
 
 .decorated-zone::before,
@@ -108,7 +109,7 @@
 
 .display-title {
   color: var(--display-color);
-  font-size: var(--display-size);
+  font-size: min(var(--display-size), calc(100cqi / 3));
   line-height: 0.825;
 }
 
